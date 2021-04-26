@@ -1,6 +1,7 @@
 import React, {useRef, useState} from "react";
 import get from "lodash/get"
 import {fileValidator, preventBrowserDefaults} from "../../utils/helpers";
+import './drag-and-drop.sass'
 
 export const DragAndDrop = ({ processDrop, children, config }:any) => {
     let [dragOverlay, setDragOverlay] = useState(false);
