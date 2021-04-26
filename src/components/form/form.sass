@@ -1,0 +1,67 @@
+.card
+  display: flex
+  justify-content: center
+  text-align: center
+  flex-grow: 0
+  margin-top: 2rem
+
+  h1
+    color: #fff
+    font-family: Helvetica,monospace
+    font-weight: lighter
+    font-size: 3rem
+
+  .form
+
+    label
+      position: relative
+      display: block
+
+      input
+        margin-left: 1rem
+        font: 18px Helvetica, Arial, sans-serif
+        box-sizing: border-box
+        display: block
+        border: none
+        padding: 20px
+        width: 300px
+        margin-bottom: 20px
+        outline: none
+        transition: all 0.2s ease-in-out
+
+        &::placeholder
+          transition: all 0.2s ease-in-out
+          color: #999
+          font: 18px Helvetica, Arial, sans-serif
+
+        &:focus, &.populated
+          padding-top: 28px
+          padding-bottom: 12px
+
+          &::placeholder
+            color: transparent
+
+          & + span
+            opacity: 1
+            top: 10px
+
+      span
+        color: #35dc9b
+        font: 13px Helvetica, Arial, sans-serif
+        position: absolute
+        top: 0
+        left: 20px
+        opacity: 0
+        transition: all 0.2s ease-in-out
+
+  .form__button
+    transition: all 0.2s ease-in-out
+    font: 18px Helvetica, Arial, sans-serif
+    border: none
+    background: #13885c
+    color: #fff
+    padding: 16px 40px
+    margin-top: 1rem
+
+    &:hover
+      background: #109f67
